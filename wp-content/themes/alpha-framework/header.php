@@ -55,7 +55,7 @@
 					<div class="collapse navbar-collapse" id="mynavbar">
 						<ul class="navbar-nav ml-auto my-nav-ul">
 							<li class="nav-item">
-								<a href="#">Home</a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
 							</li>
 							<li class="nav-item">
 								<a href="#blog">Blog</a>
