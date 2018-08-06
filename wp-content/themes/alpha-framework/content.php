@@ -2,7 +2,7 @@
 
     <div <?php post_class( 'lb-item ' ); ?>>
         <div class="lb-item-img">
-            <a href="" class="lb-item-link"></a>
+            <a href="<?php echo get_the_permalink()?>" class="lb-item-link"></a>
             <?php
                 // Lấy toàn bộ nội dung bài post
                 $post_content = get_the_content();

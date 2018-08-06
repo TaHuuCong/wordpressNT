@@ -47,6 +47,10 @@
 
 ?>
 
+<?php
+	get_header();
+?>
+
 <div class="contact-info" id="contact">
 	<div class="container">
 		<div class="row">
@@ -73,6 +77,7 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="col-lg-7">
 				<div class="row contact-notify">
 				<?php if (isset($isError) && $isError) : ?>
@@ -150,3 +155,7 @@
 		</div>
 	</div>
 </div>
+
+<?php
+	get_footer();
+?>

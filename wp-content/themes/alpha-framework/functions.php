@@ -41,16 +41,16 @@ if ( ! function_exists( 'alpha_setup' ) ) {  // nếu chưa tồn tại hàm nà
 // Nhúng file .css, .js, jquery
 if ( ! function_exists('import_style_script' ) ) {
     function import_style_script() {
+        wp_enqueue_style( 'bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' );
+        wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
         wp_enqueue_style('main-style', THEME_URL . '/style.css', false, null, 'all');
         wp_enqueue_style('custom-style', STYLE . '/custom.css', false, null, 'all');
-        wp_enqueue_style('slick-style', STYLE . '/slick.css', false, null, 'all');
-        wp_enqueue_style('slick-theme-style', STYLE . '/slick-theme.css', false, null, 'all');
+
 
         // đối với jquery thì phải deregister trước sau đó register lại
         wp_deregister_script('jquery');
         wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), '1.0.0', false);
 
-        wp_enqueue_script('slick', SCRIPTS . '/slick.min.js', array(), null, true);
         wp_enqueue_script('main', SCRIPTS . '/main.js', array(), null, true);
     }
 
@@ -75,3 +75,18 @@ if ( ! function_exists( 'alpha_validate_length' ) ) {
 		return ( strlen( trim( $fieldValue ) ) > $minLength );  // strlen() lấy chiều dài chuỗi
 	}
 }
+
+
+// function wpb_widgets_init() {
+
+// 	register_sidebar( array(
+// 		'name'          => 'Custom Header Widget Area',
+// 		'id'            => 'custom-header-widget',
+// 		'before_widget' => '<div class="chw-widget">',
+// 		'after_widget'  => '</div>',
+// 		'before_title'  => '<h2 class="chw-title">',
+// 		'after_title'   => '</h2>',
+// 	) );
+
+// }
+// add_action( 'widgets_init', 'wpb_widgets_init' );

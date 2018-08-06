@@ -44,7 +44,7 @@
 }
 
 .my-nav {
-    padding: 33px 0;
+    padding: 20px 0;
     background-color: transparent;
     z-index: 100;
 }
@@ -250,30 +250,25 @@ a:hover>.icon-burger .ib-3 {
 
 /* -------------------------------------------------------------------- */
 
-/* LASTEST BLOG */
+/* MAIN-CONTENT */
 
 .thc-content {
-    padding: 85px 60px 0;
+    padding: 60px;
 }
 
 .bg-grey {
     background-color: #f0f0f0;
 }
 
-.lastest-blog {
-    padding-left: 15px;
-}
-
-.lastest-blog .lb-h2,
-.rp-h2 {
-    margin-bottom: 15px;
+.lastest-blog .lb-h2 {
+    margin-bottom: 0;
     color: #171717;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
 }
 
 .lb-h2 {
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 .lastest-blog .lb-p {
@@ -287,6 +282,7 @@ a:hover>.icon-burger .ib-3 {
 .lb-item:hover {
     padding: 17px 5px;
     cursor: pointer;
+    transition: padding 0.3s;
 }
 
 .lb-item:focus,
@@ -298,6 +294,7 @@ a:hover>.icon-burger .ib-3 {
 
 .lb-item-img {
     position: relative;
+    border: 1px solid #ccc;
 }
 
 .lb-item-link {
@@ -316,12 +313,7 @@ a:hover>.icon-burger .ib-3 {
     background-position: 50% 50%;
     background-size: cover;
     overflow: hidden;
-    opacity: 0.7;
     transition: opacity 0.5s;
-}
-
-.lb-item-img:hover .lb-item-bg {
-    opacity: 1;
 }
 
 .lb-item-option {
@@ -340,8 +332,9 @@ a:hover>.icon-burger .ib-3 {
 }
 
 .lb-item-text {
-    background-color: #fff;
-    border-top: 1px solid #ccc;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-top: none;
     padding: 0 30px 25px;
 }
 
@@ -357,7 +350,7 @@ a:hover>.icon-burger .ib-3 {
 .lb-item-h4 {
     padding-top: 21px;
     margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 16px;
 }
 
 .lb-item-h4 a {
@@ -390,7 +383,26 @@ a:hover>.icon-burger .ib-3 {
 }
 
 .main-content {
-    padding: 0;
+    padding-right: 0;
+}
+
+.lastest-blog {
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #ffffff;
+}
+
+.lb-text {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    background-color: #f8bcbc;
+}
+
+.lb-slider {
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
 }
 
 /* -------------------------------------------------------------------- */
@@ -400,8 +412,41 @@ a:hover>.icon-burger .ib-3 {
 .recent-posts,
 .recent-comments,
 .categories {
-    padding-left: 15px;
     margin-bottom: 40px;
+    border: 1px solid #ccc;
+}
+
+.rp-content {
+    padding-left: 15px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.rp-title {
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.recent-posts .rp-title {
+    background-color: #10eef8;
+}
+
+.recent-comments .rp-title {
+    background-color: #07e856;
+}
+
+.categories .rp-title {
+    background-color: #98e208;
+}
+
+.rp-title .rp-h2 {
+    color: #171717;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 /* -------------------------------------------------------------------- */
@@ -535,13 +580,12 @@ a:hover>.icon-burger .ib-3 {
 
 .footer {
     background-color: #d3d1d1;
-    padding-top: 44px;
-    padding-bottom: 25px;
+    padding: 20px 0;
 }
 
 .footer .ft-ul {
     list-style-type: none;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     padding-left: 0;
 }
 
@@ -562,7 +606,7 @@ a:hover>.icon-burger .ib-3 {
 }
 
 .ft-copy-right p {
-    margin-bottom: 24px;
+    margin-bottom: 0;
     font-size: 14px;
 }
 
@@ -571,8 +615,7 @@ a:hover>.icon-burger .ib-3 {
 /* SIDEBAR */
 
 .sidebar {
-    padding-left: 30px;
-    padding-right: 45px;
+    padding-right: 30px;
 }
 
 .sidebar ul {
@@ -582,10 +625,13 @@ a:hover>.icon-burger .ib-3 {
 
 .sidebar ul li a {
     color: black;
-    font-weight: 600;
 }
 
 .sidebar ul li a:hover {
     color: #dc3545;
     text-decoration: none;
+}
+
+.recent-comments a {
+    font-style: italic;
 }

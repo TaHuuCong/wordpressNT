@@ -17,12 +17,6 @@
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Work+Sans:300,400,500,700" rel="stylesheet">
 
-	<!-- Fontawesome CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- Bootstrap 4 -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
 	<!-- Favicon icon -->
 	<link rel="icon" type="image/png" href="<?php echo IMAGES . '/icons/favicon.ico'; ?>">
 
@@ -61,7 +55,7 @@
 								<a href="#blog">Blog</a>
 							</li>
 							<li class="nav-item">
-								<a href="#contact">Contact</a>
+								<a href="">Contact</a>
 							</li>
 						</ul>
 					</div>

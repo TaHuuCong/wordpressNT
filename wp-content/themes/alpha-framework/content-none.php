@@ -1,3 +1,3 @@
 <div class="content-none">
-	<h3>Nothing!!!</h3>
+	<h3>Nothing here!!!</h3>
 </div>
